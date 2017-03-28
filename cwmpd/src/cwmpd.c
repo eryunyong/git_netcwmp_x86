@@ -168,7 +168,7 @@ int main(int argc, char **argv)
     return 0;
      }
 
-    sleep(15);
+    sleep(10);
     return 0;     
 }
 
