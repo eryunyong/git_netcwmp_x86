@@ -141,5 +141,30 @@ int cpe_set_igd_ms_connectionrequestpassword(cwmp_t * cwmp, const char * name, c
     return FAULT_CODE_OK;
 }
 
+int cpe_get_igd_ms_url_PeriodicInformEnable(cwmp_t * cwmp, const char * name, char ** value, pool_t * pool)
+{
+     *value = cwmp_conf_pool_get(pool, "cwmp:PeriodicInformEnable");
+    return FAULT_CODE_OK;
+}
+
+int cpe_set_igd_ms_url_PeriodicInformEnable(cwmp_t * cwmp, const char * name, const char * value, int length, callback_register_func_t callback_reg)
+{
+	cwmp_conf_set("cwmp:PeriodicInformEnable", value);
+    return FAULT_CODE_OK;
+}
+
+int cpe_get_igd_ms_url_PeriodicInformInterval(cwmp_t * cwmp, const char * name, char ** value, pool_t * pool)
+{
+    *value = cwmp_conf_pool_get(pool, "cwmp:PeriodicInformInterval");
+    return FAULT_CODE_OK;
+}
+
+int cpe_set_igd_ms_url_PeriodicInformInterval(cwmp_t * cwmp, const char * name, const char * value, int length, callback_register_func_t callback_reg)
+{
+  	cwmp_conf_set("cwmp:PeriodicInformInterval", value);
+    return FAULT_CODE_OK;
+}
+
+
 
 

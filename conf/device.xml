@@ -22,8 +22,8 @@
 				<param name="Username" rw="1" noti_rw="1" get_func="cpe_get_igd_ms_username" set_func="cpe_set_igd_ms_username"/>
 				<param name="Password" rw="1" noti_rw="1" get_func="cpe_get_igd_ms_password" set_func="cpe_set_igd_ms_password"/>
 				<param name="URL" noti_rw="1" rw="1" get_func="cpe_get_igd_ms_url" set_func="cpe_get_igd_ms_url"/>
-				<param name="PeriodicInformEnable" rw="1" noti_rw="1" type="s" get_func="" set_func=""/>
-				<param name="PeriodicInformInterval" rw="1" noti_rw="1" get_func="" set_func=""/>
+				<param name="PeriodicInformEnable" rw="1" noti_rw="1"  get_func="cpe_get_igd_ms_url_PeriodicInformEnable" set_func="cpe_set_igd_ms_url_PeriodicInformEnable"/>
+				<param name="PeriodicInformInterval" rw="1" noti_rw="1"  get_func="cpe_get_igd_ms_url_PeriodicInformInterval" set_func="cpe_set_igd_ms_url_PeriodicInformInterval"/>
 				<param name="PeriodicInformTime" rw="1" type="s" get_func="" set_func=""/>
 				<param name="ParameterKey" get_func="" set_func=""/>
 				<param name="UDPConnectionRequestAddress" get_func="" set_func=""/>

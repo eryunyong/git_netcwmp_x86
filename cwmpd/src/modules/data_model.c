@@ -22,6 +22,11 @@ model_func_t ModelFunction[] =
     {"cpe_set_igd_ms_connectionrequestusername", cpe_set_igd_ms_connectionrequestusername},
     {"cpe_set_igd_ms_connectionrequestpassword", cpe_set_igd_ms_connectionrequestpassword},
 
+    {"cpe_get_igd_ms_url_PeriodicInformEnable", cpe_get_igd_ms_url_PeriodicInformEnable},
+    {"cpe_set_igd_ms_url_PeriodicInformEnable", cpe_set_igd_ms_url_PeriodicInformEnable},
+    {"cpe_get_igd_ms_url_PeriodicInformInterval", cpe_get_igd_ms_url_PeriodicInformInterval},
+    {"cpe_set_igd_ms_url_PeriodicInformInterval", cpe_set_igd_ms_url_PeriodicInformInterval},
+
 
 	{"cpe_refresh_igd_wandevice", cpe_refresh_igd_wandevice},
     {"cpe_refresh_igd_wanconnectiondevice", cpe_refresh_igd_wanconnectiondevice},

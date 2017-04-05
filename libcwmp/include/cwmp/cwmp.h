@@ -390,8 +390,6 @@ struct parameter_node_st
 	parameter_del_handler_pt	del;
 	parameter_refresh_handler_pt	refresh;
 
-
-
 	cwmp_uint32_t	max;
 	cwmp_uint32_t	ext1;
 	cwmp_uint32_t	ext2;

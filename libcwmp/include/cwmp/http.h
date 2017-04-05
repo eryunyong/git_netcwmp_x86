@@ -50,12 +50,6 @@
 #define HTTP_200		200
 #define HTTP_400		400
 
-
-
-
-
-
-
 typedef enum
 {
     HTTP_GET,
