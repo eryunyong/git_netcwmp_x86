@@ -5,6 +5,7 @@
 
 model_func_t ModelFunction[] =
 {
+    // RPC_Get
     {"cpe_get_igd_di_manufacturer", cpe_get_igd_di_manufacturer},
     {"cpe_get_igd_di_manufactureroui", cpe_get_igd_di_manufactureroui},
     {"cpe_get_igd_di_productclass", cpe_get_igd_di_productclass},
@@ -19,19 +20,23 @@ model_func_t ModelFunction[] =
     {"cpe_get_igd_ms_connectionrequesturl", cpe_get_igd_ms_connectionrequesturl},
     {"cpe_get_igd_ms_connectionrequestusername", cpe_get_igd_ms_connectionrequestusername},
     {"cpe_get_igd_ms_connectionrequestpassword", cpe_get_igd_ms_connectionrequestpassword},
+    {"cpe_get_igd_ms_url_PeriodicInformEnable", cpe_get_igd_ms_url_PeriodicInformEnable},
+    {"cpe_get_igd_ms_url_PeriodicInformInterval", cpe_get_igd_ms_url_PeriodicInformInterval},
+
+    // RPC_Set
     {"cpe_set_igd_ms_connectionrequestusername", cpe_set_igd_ms_connectionrequestusername},
     {"cpe_set_igd_ms_connectionrequestpassword", cpe_set_igd_ms_connectionrequestpassword},
-
-    {"cpe_get_igd_ms_url_PeriodicInformEnable", cpe_get_igd_ms_url_PeriodicInformEnable},
     {"cpe_set_igd_ms_url_PeriodicInformEnable", cpe_set_igd_ms_url_PeriodicInformEnable},
-    {"cpe_get_igd_ms_url_PeriodicInformInterval", cpe_get_igd_ms_url_PeriodicInformInterval},
     {"cpe_set_igd_ms_url_PeriodicInformInterval", cpe_set_igd_ms_url_PeriodicInformInterval},
 
-
-	{"cpe_refresh_igd_wandevice", cpe_refresh_igd_wandevice},
+    // RPC_Refresh
+    {"cpe_refresh_igd_wandevice", cpe_refresh_igd_wandevice},
     {"cpe_refresh_igd_wanconnectiondevice", cpe_refresh_igd_wanconnectiondevice},
     {"cpe_refresh_igd_wanipconnection", cpe_refresh_igd_wanipconnection},
 
+    // RPC_Addobj
+
+    // RPC_Delobj
 };
 
 int get_index_after_paramname(parameter_node_t * param, const char * tag_name)

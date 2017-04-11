@@ -62,7 +62,7 @@ int cpe_get_localip(const char * eth_name, char *hostip)
 //InternetGatewayDevice.ManagementServer.Username
 int cpe_get_igd_ms_username(cwmp_t * cwmp, const char * name, char ** value, pool_t * pool)
 {    
-	  *value = cwmp_conf_pool_get(pool, "cwmp:acs_username");
+     *value = cwmp_conf_pool_get(pool, "cwmp:acs_username");
     return FAULT_CODE_OK;
 }
 
@@ -76,8 +76,8 @@ int cpe_set_igd_ms_username(cwmp_t * cwmp, const char * name, const char * value
 //InternetGatewayDevice.ManagementServer.Password
 int cpe_get_igd_ms_password(cwmp_t * cwmp, const char * name, char ** value, pool_t * pool)
 {
-	  *value = cwmp_conf_pool_get(pool, "cwmp:acs_password");
-	  return FAULT_CODE_OK;
+    *value = cwmp_conf_pool_get(pool, "cwmp:acs_password");
+    return FAULT_CODE_OK;
 }
 
 int cpe_set_igd_ms_password(cwmp_t * cwmp, const char * name, const char * value, int length, callback_register_func_t callback_reg)
@@ -89,7 +89,7 @@ int cpe_set_igd_ms_password(cwmp_t * cwmp, const char * name, const char * value
 //InternetGatewayDevice.ManagementServer.URL
 int cpe_get_igd_ms_url(cwmp_t * cwmp, const char * name, char ** value, pool_t * pool)
 {    
-	  *value = cwmp_conf_pool_get(pool, "cwmp:acs_url");
+    *value = cwmp_conf_pool_get(pool, "cwmp:acs_url");
     return FAULT_CODE_OK;
 }
 
@@ -137,19 +137,19 @@ int cpe_get_igd_ms_connectionrequestpassword(cwmp_t * cwmp, const char * name, c
 }
 int cpe_set_igd_ms_connectionrequestpassword(cwmp_t * cwmp, const char * name, const char * value, int length, callback_register_func_t callback_reg)
 {
-	cwmp_conf_set("cwmp:cpe_password", value);
+    cwmp_conf_set("cwmp:cpe_password", value);
     return FAULT_CODE_OK;
 }
 
 int cpe_get_igd_ms_url_PeriodicInformEnable(cwmp_t * cwmp, const char * name, char ** value, pool_t * pool)
 {
-     *value = cwmp_conf_pool_get(pool, "cwmp:PeriodicInformEnable");
+    *value = cwmp_conf_pool_get(pool, "cwmp:PeriodicInformEnable");     
     return FAULT_CODE_OK;
 }
 
 int cpe_set_igd_ms_url_PeriodicInformEnable(cwmp_t * cwmp, const char * name, const char * value, int length, callback_register_func_t callback_reg)
 {
-	cwmp_conf_set("cwmp:PeriodicInformEnable", value);
+    cwmp_conf_set("cwmp:PeriodicInformEnable", value);
     return FAULT_CODE_OK;
 }
 
@@ -161,7 +161,7 @@ int cpe_get_igd_ms_url_PeriodicInformInterval(cwmp_t * cwmp, const char * name, 
 
 int cpe_set_igd_ms_url_PeriodicInformInterval(cwmp_t * cwmp, const char * name, const char * value, int length, callback_register_func_t callback_reg)
 {
-  	cwmp_conf_set("cwmp:PeriodicInformInterval", value);
+    cwmp_conf_set("cwmp:PeriodicInformInterval", value);
     return FAULT_CODE_OK;
 }
 
